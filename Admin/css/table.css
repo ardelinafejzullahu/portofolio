@@ -1,0 +1,116 @@
+
+.table {
+    margin-left: 15%;
+    width: 80%;
+    overflow: hidden;
+    background: #FFF;
+    color: #7a7272;
+    border-radius: 10px;
+    border: 1px solid #7a7272;
+  }
+  .table tr {
+    border: 1px solid #D9E4E6;
+  }
+  .table tr:nth-child(odd) {
+    background-color: #FFF;
+  }
+  .table th {
+    display: none;
+    border: 1px solid #FFF;
+    background-color: #7a7272;
+    color: #FFF;
+    padding: 1em;
+  }
+  .table th:first-child {
+    display: table-cell;
+    text-align: center;
+  }
+  .table th:nth-child(2) {
+    display: table-cell;
+  }
+  .table th:nth-child(2) span {
+    display: none;
+  }
+  .table th:nth-child(2):after {
+    content: attr(data-th);
+  }
+  @media (min-width: 480px) {
+    .table th:nth-child(2) span {
+      display: block;
+    }
+    .table th:nth-child(2):after {
+      display: none;
+    }
+  }
+  .table td {
+    display: block;
+    word-wrap: break-word;
+    max-width: 7em;
+  }
+  .table td:first-child {
+    display: table-cell;
+    text-align: center;
+    border-right: 1px solid #D9E4E6;
+  }
+  @media (min-width: 480px) {
+    .table td {
+      border: 1px solid #D9E4E6;
+    }
+  }
+  .table th {
+    text-align: center;
+    margin: .5em 1em;
+  }
+  .table td{
+      text-align: center;
+  }
+  @media (min-width: 480px) {
+    .table th, .table td {
+      display: table-cell;
+      padding: 1em;
+    }
+  }
+  
+  body {
+    padding: 0 2em;
+    font-family: Arial, sans-serif;
+    color: #7a7272;
+    background: #f2f2f2;
+  }
+  
+  h1 {
+    font-family: Verdana;
+    font-weight: normal;
+    color: #7a7272;
+  }
+  h1 span {
+    color: #7a7272;
+  }
+
+  .table button{
+
+      text-align: center;
+      text-decoration: none;
+      padding:8px 12px;
+      margin:8px 0 0;
+      border:2px solid #78788c;
+      background:0;
+      color:#5a5a6e;
+      cursor:pointer;
+      transition:all .3s;
+  }
+  
+
+  .addNew{
+  
+    float:right;
+    padding:8px 12px;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+
+  
+  }
+ 
